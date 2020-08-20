@@ -35,7 +35,6 @@ public class CaptureController {
 		try {
 			orderString = om.writeValueAsString(order);
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		logger.info("Received order:{}",orderString);
